@@ -1,0 +1,21 @@
+I. Funkcjonalnoœæ
+	1. CRUD - dodawanie oczyt edycja usuwanie notatek
+	2. logaowanie
+	3. zlecanie zadañ
+	4. kalendarz
+	5. alerty
+	6. w¹tki notatek z zak³adkami dedykowanymi
+	7. baza wiedzy - dodawanie linków w postaci drzewka aby mo¿na by³o szybko wyszukiwaæ + wyœwietlanie linkó w ramce albo w nowej zak³¹dce 
+II. Technologie
+	1. HTML 5
+	2. javascript
+	3. css3
+	4. sass
+	5. json
+	6. mysql
+	7. bootstrap
+	8. php
+III. Narzêdzia
+	1. GIT
+	2. SASS
+	3. 
