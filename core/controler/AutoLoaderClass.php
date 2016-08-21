@@ -1,15 +1,17 @@
 <?php
 
-class Core_AutoLoaderClass {
+namespace core ;
+
+class AutoLoaderClass {
 	
 	private $path = array() ;
 	private $corePath = 'core' ;
 	
 	public function __construct ()
 	{
-		spl_autoload_register ( array( $this, 'loader' ) );
+		spl_autoload_register ( array( $this, 'loader' ) ) ;
 		
-		$this->addCorePath ();
+		$this->addCorePath () ;
 	}
 	
 	private function addCorePath ()
@@ -31,15 +33,18 @@ class Core_AutoLoaderClass {
 	// load class in register path
 	///////////////////////////////
 	
-	public function loader ( $className )
+	private function loader ( $className )
 	{
 		/////////////////////////
 		// search path for class
 		/////////////////////////
-		
+		echo "<pre>";
+		var_dump('aaa');
+		echo "</pre>";
+		exit;
 		foreach ( $this->path as $path )
 		{
-			$filePath = $path . '/' . $className . '.php';
+			$filePath = $path . '/' . $className . '.php' ;
 			
 			if( file_exists ( $filePath ) ) include_once ( $filePath ) ;
 		}

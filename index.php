@@ -1,10 +1,23 @@
 <?php
 
+use core as c;
 require_once('core/controler/AutoLoaderClass.php') ;
 
-$autoLoader = new Core_AutoLoaderClass ();
+$autoLoader = new c\AutoLoaderClass ();
 $autoLoader->registerPath ( 'app/controller' ) ;
 $autoLoader->registerPath ( 'app/model' ) ;
+
+$app = new c\DataFlowClass();
+/*
+echo "<pre>";
+var_dump($autoLoader);
+echo "</pre>";
+exit;
+
+
+$app->getModule();
+$app->getAction();
+*/
 
 
 
